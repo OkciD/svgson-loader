@@ -4,8 +4,7 @@ module.exports = function(content) {
 	const callback = this.async();
 
 	svgson.parse(content, {
-		compat: true,
-		camelCase: true
+		compat: true
 	})
 		.then((result) => {
 			callback(null,
